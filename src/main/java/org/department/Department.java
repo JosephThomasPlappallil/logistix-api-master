@@ -3,6 +3,7 @@ package org.department;
 import java.sql.Timestamp;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
+import io.quarkus.vertx.http.runtime.devmode.Json;
 import lombok.Data;
 
 @RegisterForReflection
@@ -11,13 +12,17 @@ import lombok.Data;
 public class Department {
     public Long id;
 
+    public Long organizationId;
+
+    public Long divisionId;
+
     public String code;
 
     public String name;
 
     public String shortName;
 
-    public String details;
+    public Json details;
 
     public String notes;
 

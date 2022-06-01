@@ -54,6 +54,12 @@ public class DepartmentResource {
     public Response updateDepartment(@PathParam("id") Long id, Department department) {
         DepartmentEntity departmentEntity = DepartmentEntity.findById(id);
 
+        if (Objects.nonNull(department.getOrganizationId())) {
+            departmentEntity.organizationId = department.getOrganizationId();
+        }
+        if (Objects.nonNull(department.getDivisionId())) {
+            departmentEntity.divisionId = department.getDivisionId();
+        }
         if (Objects.nonNull(department.getCode())) {
             departmentEntity.code = department.getCode();
         }

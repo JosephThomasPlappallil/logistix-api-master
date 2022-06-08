@@ -1,4 +1,4 @@
-package org.strebentechnik.organization.util;
+package org.util;
 
 import org.mapstruct.MapperConfig;
 @MapperConfig(componentModel = "cdi")

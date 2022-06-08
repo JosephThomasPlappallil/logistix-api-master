@@ -1,4 +1,4 @@
-package org.strebentechnik.organization;
+package org.organization;
 
 import java.util.Objects;
 import javax.transaction.Transactional;

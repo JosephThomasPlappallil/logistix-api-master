@@ -20,6 +20,7 @@ public class OrganizationEntity extends PanacheEntity {
     @Type(type = "json")
     @Column(columnDefinition = "json")
     public Object details;
+    public Long id;
     public String code;
     public String parentId;
     public String parentCode;

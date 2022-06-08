@@ -13,7 +13,7 @@ public class Organization{
     @Column(columnDefinition = "json")
     public Object details;
     public String code;
-	public String parentId;
+    public String parentId;
     public String parentCode;
     public String name;
     public String shortName;
@@ -23,4 +23,5 @@ public class Organization{
     public Timestamp createdAt;
     public Timestamp updatedAt;
 }
+
 

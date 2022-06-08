@@ -12,7 +12,7 @@ public class Division {
     private String name;
     private String shortName;
     private String taxIdentifier;
-    private String details;
+   private String details;
     private String notes;
     private String createdBy;
     private String updatedBy;

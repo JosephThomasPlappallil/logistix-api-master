@@ -1,4 +1,4 @@
-package org.util;
+package org.divisions.util;
 import org.mapstruct.MapperConfig;
 
 @MapperConfig(componentModel = "cdi")

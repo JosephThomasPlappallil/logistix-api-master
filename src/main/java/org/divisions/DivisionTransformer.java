@@ -3,7 +3,7 @@ package org.divisions;
 import java.util.List;
 
 import org.mapstruct.Mapper;
-import org.util.QuarkusMappingConfig;
+import org.divisions.util.QuarkusMappingConfig;
 
 @Mapper(config = QuarkusMappingConfig.class)
 

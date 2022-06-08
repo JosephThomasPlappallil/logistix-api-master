@@ -1,4 +1,4 @@
-package org.util;
+package org.department.util;
 
 import org.mapstruct.MapperConfig;
 

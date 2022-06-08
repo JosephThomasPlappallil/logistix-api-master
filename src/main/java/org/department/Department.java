@@ -21,7 +21,7 @@ public class Department {
 
     public String shortName;
 
-    public Json details;
+    public String details;
 
     public String notes;
 

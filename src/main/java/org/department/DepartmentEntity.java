@@ -1,11 +1,14 @@
 package org.department;
 
 import java.sql.Timestamp;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
+import org.hibernate.annotations.Type;
+
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
-import io.quarkus.vertx.http.runtime.devmode.Json;
 
 @Entity(name = "department")
 public class DepartmentEntity extends PanacheEntity {
@@ -20,7 +23,9 @@ public class DepartmentEntity extends PanacheEntity {
 
     public String shortName;
 
-    public String details;
+    @Type(type = "json")
+    @Column(columnDefinition = "json")
+    public Object details;
 
     public String notes;
 

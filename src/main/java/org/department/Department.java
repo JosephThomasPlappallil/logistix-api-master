@@ -3,7 +3,6 @@ package org.department;
 import java.sql.Timestamp;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
-import io.quarkus.vertx.http.runtime.devmode.Json;
 import lombok.Data;
 
 @RegisterForReflection

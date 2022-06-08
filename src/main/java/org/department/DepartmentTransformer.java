@@ -1,9 +1,9 @@
 package org.department;
 
-import org.department.util.*;
 import java.util.List;
 
 import org.mapstruct.Mapper;
+import org.util.*;
 
 @Mapper(config = QuarkusMappingConfig.class)
 public interface DepartmentTransformer {

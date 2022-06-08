@@ -2,14 +2,16 @@ package org.department;
 
 import java.sql.Timestamp;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import io.quarkus.vertx.http.runtime.devmode.Json;
 
 @Entity(name = "department")
 public class DepartmentEntity extends PanacheEntity {
-
+    @OneToMany(mappedBy = "Organization")
     public Long organizationId;
-
+    @OneToMany(mappedBy = "Division")
     public Long divisionId;
 
     public String code;

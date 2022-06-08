@@ -8,7 +8,6 @@ import lombok.Data;
 
 @RegisterForReflection
 @Data
-
 public class Department {
     public Long id;
 

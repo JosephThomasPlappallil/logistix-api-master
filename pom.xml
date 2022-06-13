@@ -30,7 +30,8 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
-    <groupId>com.vladmihalcea</groupId>
+    <dependency>
+      <groupId>com.vladmihalcea</groupId>
       <artifactId>hibernate-types-parent</artifactId>
       <version>2.16.2</version>
       <type>pom</type>
@@ -106,12 +107,6 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.vladmihalcea</groupId>
-      <artifactId>hibernate-types-parent</artifactId>
-      <version>2.16.2</version>
-      <type>pom</type>
     </dependency>
   </dependencies>
   <build>

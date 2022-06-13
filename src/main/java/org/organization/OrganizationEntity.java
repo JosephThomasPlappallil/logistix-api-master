@@ -1,10 +1,15 @@
 package org.organization;
 
 import java.sql.Timestamp;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.MapKey;
+import javax.persistence.OneToMany;
 
+import org.divisions.DivisionEntity;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
@@ -17,6 +22,9 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity(name="organization")
 public class OrganizationEntity extends PanacheEntity {
+    @MapKey(name = "id")
+    @OneToMany(mappedBy = "organization")
+    protected Map<Long, DivisionEntity> division = new HashMap<>();
     @Type(type = "json")
     @Column(columnDefinition = "json")
     public Object details;

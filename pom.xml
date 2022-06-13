@@ -30,9 +30,7 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
-
-   <dependency>
-      <groupId>com.vladmihalcea</groupId>
+    <groupId>com.vladmihalcea</groupId>
       <artifactId>hibernate-types-parent</artifactId>
       <version>2.16.2</version>
       <type>pom</type>
@@ -109,6 +107,12 @@
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.vladmihalcea</groupId>
+      <artifactId>hibernate-types-parent</artifactId>
+      <version>2.16.2</version>
+      <type>pom</type>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -127,6 +131,7 @@
           </execution>
         </executions>
       </plugin>
+
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${compiler-plugin.version}</version>

@@ -1,6 +1,7 @@
+
 package org.divisions;
 
-import javax.inject.Inject;
+
 import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -18,8 +19,7 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 @Tag(name="division")
 public class DivisionResource {
 
-    @Inject
-    DivisionTransformer divisionTransformer;
+    
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
